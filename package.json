@@ -1,0 +1,19 @@
+{
+  "name": "crypto-aes-gcm",
+  "version": "1.0.0",
+  "description": "Uses the SubtleCrypto interface of the Web Cryptography API to encrypt and decrypt text using AES-GCM (AES Galois counter mode)",
+  "type": "module",
+  "exports": {
+    "node": "./node.js",
+    "default": "./browser.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/korywka/crypto-aes-gcm"
+  },
+  "author": "Chris Veness (https://github.com/chrisveness)",
+  "license": "MIT"
+}
