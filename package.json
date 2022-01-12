@@ -1,6 +1,6 @@
 {
   "name": "crypto-aes-gcm",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Uses the SubtleCrypto interface of the Web Cryptography API to encrypt and decrypt text using AES-GCM (AES Galois counter mode)",
   "type": "module",
   "exports": {
