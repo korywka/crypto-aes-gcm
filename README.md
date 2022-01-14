@@ -13,11 +13,11 @@ import { aesGcmEncrypt, aesGcmDecrypt } from 'crypto-aes-gcm';
 
 // encryption
 const ciphertext = await aesGcmEncrypt('my secret text', 'pw');
-aesGcmEncrypt('my secret text', 'pw').then(function(ciphertext) { console.log(ciphertext); });
+console.log(ciphertext);
 
 // decryption
 const plaintext = await aesGcmDecrypt(ciphertext, 'pw');
-aesGcmDecrypt(ciphertext, 'pw').then(function(plaintext) { console.log(plaintext); });
+console.log(plaintext);
 ```
 
 ## Origin story
