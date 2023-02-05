@@ -9,7 +9,7 @@ Node and browser: [crypto-aes-gcm](https://www.npmjs.com/package/crypto-aes-gcm)
 Deno package: [https://deno.land/x/crypto_aes_gcm](https://deno.land/x/crypto_aes_gcm)
 
 ```js
-import { aes_gcm_encrypt, aes_gcm_decrypt } from '../index.js';
+import { aes_gcm_encrypt, aes_gcm_decrypt } from 'crypto-aes-gcm';
 const password = '123456';
 const message = 'i will never let you go';
 
