@@ -5,7 +5,8 @@ Uses the SubtleCrypto interface of the Web Cryptography API to encrypt and decry
 This module uses the native WebCrypto API in [node.js](https://nodejs.org/api/webcrypto.html), Deno and the [browser](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API).
 
 ```
-npm install crypto-aes-gcm
+node and browser: npm install crypto-aes-gcm
+deno package: https://deno.land/x/crypto_aes_gcm;
 ```
 
 ```js
