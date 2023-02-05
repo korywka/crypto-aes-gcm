@@ -2,27 +2,27 @@
 
 Uses the SubtleCrypto interface of the Web Cryptography API to encrypt and decrypt text using AES-GCM (AES Galois counter mode).
 
-This module uses the native (web)crypto API in node.js and the browser.
+This module uses the native WebCrypto API in [node.js](https://nodejs.org/api/webcrypto.html), Deno and the [browser](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API).
 
 ```
 npm install crypto-aes-gcm
 ```
 
 ```js
-import { aesGcmEncrypt, aesGcmDecrypt } from 'crypto-aes-gcm';
+import { aes_gcm_encrypt, aes_gcm_decrypt } from '../index.js';
+const password = '123456';
+const message = 'i will never let you go';
 
-// encryption
-const ciphertext = await aesGcmEncrypt('my secret text', 'pw');
-console.log(ciphertext);
+const encrypted = await aes_gcm_encrypt(message, password);
+console.log(encrypted);
 
-// decryption
-const plaintext = await aesGcmDecrypt(ciphertext, 'pw');
-console.log(plaintext);
+const decrypted = await aes_gcm_decrypt(encrypted, password);
+console.log(decrypted);
+
+console.log(message === decrypted);
 ```
 
-## Origin story
+## Original implementation
 
-The code was originally written by [Chris Veness](https://github.com/chrisveness) at [this gist](https://gist.github.com/chrisveness/43bcda93af9f646d083fad678071b90a).
-
-Then, it was published as a package with node.js compatability out of the box.
+The code was originally written by [Chris Veness](https://gist.github.com/chrisveness/43bcda93af9f646d083fad678071b90a).
 
