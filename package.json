@@ -7,7 +7,9 @@
 	"scripts": {
 		"test": "node tests/node.js"
 	},
-	"files": ["index.js"],
-	"repository": "korywka/crypto-aes-gcm",
+	"files": [
+		"index.js"
+	],
+	"repository": "github:korywka/crypto-aes-gcm",
 	"license": "MIT"
 }
