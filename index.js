@@ -54,7 +54,6 @@ export async function aes_gcm_decrypt(ciphertext, password) {
 	const ctStr = atob(ciphertext).slice(12);
 	// ciphertext as Uint8Array
 	const ctUint8 = new Uint8Array(Array.from(ctStr).map(ch => ch.charCodeAt(0)));
-	// note: why doesn't ctUint8 = new TextEncoder().encode(ctStr) work?
 
 	try {
 		// decrypt ciphertext using key
